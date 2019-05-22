@@ -1,9 +1,10 @@
 import org.junit.Test;
 
 public class simpleTest {
+    test t = new test();
 
     @Test
     public void test1(){
-        System.out.println("This is a test");
+        t.testing();
     }
 }
