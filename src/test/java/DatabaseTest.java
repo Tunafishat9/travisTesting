@@ -49,10 +49,10 @@ public class DatabaseTest {
         Database d = new Database();
 
         String name = "Json";
-        String pass = "12345";
-        d.write(name, pass);
-        String expected = "Json";
-        String actual = d.remove(expected);
+        d.remove(name);
+        String expected = "Found and removed" + name + "\n\r" + "\n\t";
+        String actual = d.remove(name);
+        System.out.println(actual);
         Assert.assertEquals(expected, actual);
         System.out.println("Databse record removal  --  passed");
     }
